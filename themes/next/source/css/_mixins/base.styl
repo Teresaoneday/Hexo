@@ -1,0 +1,75 @@
+the-transition() {
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0s;
+}
+
+mobile() {
+  @media (max-width: 767px) {
+    {block}
+    #header{
+    right: 0!important;
+    }
+    .header-inner {
+    margin-bottom: -10px!important;
+    }
+    .main {
+    margin-top: -50px;
+    }
+    .menu .menu-item {
+    margin: 5px auto;
+    }
+    .menu .menu-item:hover a:before,
+    .menu .menu-item:hover a:after,
+    .menu .menu-item-active a:before,
+    .menu .menu-item-active a:after {
+        opacity: 0;
+    }
+    .header-inner {
+    padding: 6px 9px 15px;
+    }
+    .site-nav {
+    position: relative;
+    top: 5px;
+    }
+  }
+}
+
+tablet() {
+  @media (min-width: 768px) and (max-width: 991px) {
+    {block}
+    #header{
+    right: 0!important;
+    }
+  }
+}
+
+desktop() {
+  @media (min-width: 992px) {
+    {block}
+  }
+}
+
+desktop-large() {
+  @media (min-width: 1600px) {
+    {block}
+  }
+}
+
+circle() {
+  border-radius: 50%;
+}
+
+random-color($min, $max) {
+  return floor(math(0, 'random') * ($max - $min + 1) + $min);
+}
+
+// Clearfix. http://nicolasgallagher.com/micro-clearfix-hack/
+clearfix() {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after { clear: both; }
+}

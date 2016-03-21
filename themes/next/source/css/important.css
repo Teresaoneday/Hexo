@@ -1,0 +1,257 @@
+body{
+	background-color: #F8F8F8;
+}
+.container{
+	background-color: #F8F8F8;
+}
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1020;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+    transition: all .2s ease-in;
+}
+.header-inner{
+	padding: 2px 0 2px;
+}
+.header_right{
+	right: 160px;
+}
+.main {
+    margin-top: -40px;
+    background-color: #f8f8f8;
+}
+
+.posts-expand .post-type-normal {
+    position: relative;
+    top: 40px;
+    padding: 10px 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, .1);
+}
+.posts-expand .post{
+	margin-top: 40px;
+}
+.page-archive .posts-collapse{
+	position: relative;
+	top: 40px;
+}
+.posts-collapse .collection-title{
+	margin: 30px 0;
+}
+.posts-collapse .post{
+	margin: -10px 0;
+}
+.posts-expand .category-all-page{
+	position: relative;
+	top: 40px;
+}
+.posts-expand .tag-cloud{
+	position: relative;
+	top: 40px;
+}
+.posts-expand .post-title-link::before{
+	bottom: -4px;
+}
+.post-body {
+    margin: 0px -20px;
+    padding: 0 20px;
+}
+
+.post-body h2 {
+    margin: 0 -20px;
+    padding: 0 15px;
+    background: #fbfbfb;
+    line-height: 44px;
+}
+
+.post-body h2:nth-of-type(5n+1) {
+    border-left: 4px solid #000;
+}
+
+.post-body h2:nth-of-type(5n+2) {
+    border-left: 4px solid #000;
+}
+
+.post-body h2:nth-of-type(5n+3) {
+    border-left: 4px solid #000;
+}
+
+.post-body h2:nth-of-type(5n+4) {
+    border-left: 4px solid #000;
+}
+
+.post-body h2:nth-of-type(5n+5) {
+    border-left: 4px solid #000;
+}
+.post-body h3::before {
+    content: "■";
+    position: relative;
+    color: #000;
+    top: -2px;
+    margin-right: 5px;
+}
+.menu .menu-item a:hover {
+    background: #fff;
+}
+
+.menu .menu-item {
+    width: 90px;
+}
+
+.menu .menu-item a:before,
+.menu .menu-item a:after {
+    position: absolute;
+    display: block;
+    top: 0;
+    width: 100px;
+    height: 0px;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.menu .menu-item:hover a:before,
+.menu .menu-item:hover a:after,
+.menu .menu-item-active a:before,
+.menu .menu-item-active a:after {
+    opacity: 1;
+}
+
+.menu .menu-item a:before {
+    content: '[';
+    margin-left: -30px;
+}
+
+.menu .menu-item:hover a:before,
+.menu .menu-item-active a:before {
+    margin-left: -60px;
+}
+
+.menu .menu-item a:after {
+    content: ']';
+    margin-left: 10px;
+}
+
+.menu .menu-item:hover a:after,
+.menu .menu-item-active a:after {
+    margin-left: 30px;
+}
+.site-meta{
+	margin-left: 0px;
+}
+.sidebar-toggle {
+    width: 20px;
+    height: 20px;
+    bottom: 25px;
+    right: 25px;
+    padding: 10px;
+}
+
+.sidebar-toggle-line {
+    height: 1px;
+    margin-top: 4px;
+}
+
+.sidebar-toggle-line-first {
+    margin-top: 5px!important;
+}
+
+.back-to-top {
+    width: 40px;
+    height: 40px;
+    bottom: 25px;
+    right: 25px;
+    z-index: 1049;
+}
+
+.back-to-top i {
+    float: left;
+    margin: 13px 0 0 2px;
+    width: 24px;
+    height: 11px;
+    background-image: url(../images/up.png);
+}
+
+.back-to-top.back-to-top-on {
+    bottom: 66px;
+}
+
+
+/*多说*/
+.comments{
+	margin: 60px 0 0;
+}
+#ds-thread #ds-reset .ds-like-tooltip {
+    display: none;
+}
+
+#ds-thread #ds-reset a.ds-like-thread-button {
+    border: none;
+    background-color: #F8F8F8;
+    background-image: none;
+}
+
+#ds-thread #ds-reset #ds-hot-posts {
+    border: none;
+}
+
+#ds-reset .ds-rounded {
+    border-radius: 0;
+}
+
+#ds-reset .ds-gradient-bg {
+    background-image: none;
+}
+
+#ds-thread #ds-reset li.ds-tab a.ds-current {
+    background-color: none;
+}
+
+#ds-thread #ds-reset .ds-post-options {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.theme-next #ds-thread #ds-reset .ds-textarea-wrapper {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+}
+
+.ds-sync {
+    display: none!important;
+}
+
+#ds-smilies-tooltip {
+    border-radius: 0;
+}
+
+#ds-smilies-tooltip ul.ds-smilies-tabs li a {
+    background: none;
+}
+
+#ds-smilies-tooltip ul.ds-smilies-tabs li a.ds-current {
+    box-shadow: none;
+}
+
+.theme-next #ds-thread #ds-reset .ds-post-button {
+    border-radius: 0;
+    top: -1px;
+    right: -1px;
+    height: 42px;
+}
+
+.theme-next #ds-thread #ds-reset .ds-post-button:hover {
+    background-position: 0 -40px;
+    color: #60676d;
+}
+
+#ds-thread #ds-reset .ds-account-control ul {
+    border-radius: 0;
+}
+@media (max-width: 991px) and (min-width: 768px)
+#header{
+    right: 0!important;
+}
