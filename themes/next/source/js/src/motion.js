@@ -55,7 +55,7 @@ $(document).ready(function () {
     el: '.sidebar-toggle-line-first',
     status: {
       arrow: {width: '50%', rotateZ: '-45deg', top: '2px', left: '-1px'},
-      close: {width: '100%', rotateZ: '-45deg', top: '5px', left: '0px'}
+      close: {width: '27px', rotateZ: '-45deg', top: '5px', left: '-4px'}
     }
   });
   var sidebarToggleLine2nd = new SidebarToggleLine({
@@ -69,7 +69,7 @@ $(document).ready(function () {
     el: '.sidebar-toggle-line-last',
     status: {
       arrow: {width: '50%', rotateZ: '45deg', top: '-2px', left: '-1px'},
-      close: {width: '100%', rotateZ: '45deg', top: '-5px', left: '0px'}
+      close: {width: '27px', rotateZ: '45deg', top: '-5px', left: '-4px'}
     }
   });
 

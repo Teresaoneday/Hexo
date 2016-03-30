@@ -204,9 +204,9 @@ duoshuo_shortname: niices
 # you can visit http://dev.duoshuo.com get duoshuo user id.
 duoshuo_info:
   ua_enable: true
-  admin_enable: false
-  user_id: 0
-  #admin_nickname: ROOT
+  admin_enable: true
+  user_id: 11709821
+  admin_nickname: ROOT
 
 
 # Facebook SDK Support.
@@ -259,10 +259,15 @@ feed:
 
 sitemap:
     path: sitemap.xml
+baidusitemap:
+    path: baidusitemap.xml
+
 
 # title, chinese available
 links_title: Links
 # # links
 links:
-   文艺的聚集地: http://petite-dd.com/
-
+   文艺的聚集地: http://petite-dd.com
+   前端学习笔记: http://greenfavo.com
+   双鱼bizhongbio: http://www.bizhongbio.com
+   叮当猫-前端博客: http://shuliqiyzs.com
