@@ -1,6 +1,6 @@
 ---
 title: 基于Hexo部署个人博客到Github Page和Coding Page并绑定自定义域名
-date: 2016-3-27 20:22:33 
+date: 2016-3-27 20:22:33
 tags:
   - Hexo
   - Github Page
@@ -17,21 +17,21 @@ categories: 个人博客
 ## 准备
 >本文主要针对`Windows`平台以及`Hexo 3.x`
 
-### 1、关于Hexo
+### 关于Hexo
 >A fast, simple & powerful blog framework
 
 Hexo 是一个快速、简洁且高效的博客框架。`Hexo` 使用 `Markdown`（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。
 官网地址：[hexo.io](https://hexo.io/)
 
-### 2、Node环境安装
+### Node环境安装
 Hexo是一个基于Node.js静态博客框架，所以我们还需要安装Node环境。
 官网地址：[Node](https://nodejs.org/en/)
 
-### 3、Git安装
+### Git安装
 为了把我们的静态文件部署到`Github`和`Coding`上面，我们还需要`Git`这个版本控制工具，本文不讨论`Git`的详细使用方法，先挖个坑[Git简明使用方法]()。
 官网地址：[Git](https://git-scm.com/download/)
 
-### 4、安装Hexo
+### 安装Hexo
 在电脑里面给`Hexo`安个家，我是安在`D:\Github\Hexo`文件夹下的，然后打开`Git Shell`，切换到工作目录，使用`npm`命令安装（`npm`的全称是Node Package Manager，是一个NodeJS包管理和分发工具）。
 ```js
 npm install hexo-cli -g
@@ -41,12 +41,12 @@ npm install hexo --save
 npm install -g cnpm --registry=https://registry.npm.taobao.org
 ```
 ## 本地配置
-### 1、部署Hexo
+### 部署Hexo
 在`Hexo`目录下运行以下命令，程序会自动安装所有需要的文件。
 ```js
 hexo init
 ```
-### 2、安装Hexo插件
+### 安装Hexo插件
 一些必要的插件和部署到git所需的插件以及自动生成`sitemap`,`rss`的插件，建议安装。
 ```js
 npm install hexo-generator-index --save
@@ -61,7 +61,7 @@ npm install hexo-renderer-stylus@0.2 --save
 npm install hexo-generator-feed@1 --save
 npm install hexo-generator-sitemap@1 --save
 ```
-### 3、启动本地服务
+### 启动本地服务
 执行以下命令，成功后在浏览器打开[localhost:4000](http://localhost:4000)可以查看效果
 ```js
 hexo server
@@ -69,7 +69,7 @@ hexo server
 >All Done! 本地配置就这么简单。
 
 ## 部署静态网页到Github和Coding
-### 1、注册设置GitHub
+### 注册设置GitHub
 1.注册[Github](https://github.com)，自定义用户名如`niices`，则你的`Github`访问地址为[github.com/niices](https://github.com/niices)
 2.创建仓库，在主页右上角头像左边有个加号，点击创建`New repository`。
 ![](/images/2016/03/2.png)
@@ -77,7 +77,7 @@ hexo server
 ![](/images/2016/03/3.png)
 >`Description`就是这个仓库的描述如`Personal Blog`，类型选择`Public`，这样别人才能访问你的网站，而且免费账户也不能创建私有仓库，这样才符合`Github`开源的思想。
 
-### 2、注册设置Coding
+### 注册设置Coding
 1.注册[Coding](https://coding.net),自定义用户名如`niices`，则你的`Coding`访问地址为[coding.net/u/niices](https://coding.net/u/niices)
 2.创建项目，项目名最好和用户名一致，这样才能通过[niices.coding.me](http://niices.coding.me)直接访问你的网站。
 ![](/images/2016/03/4.png)
@@ -88,7 +88,7 @@ hexo server
 ![](/images/2016/03/5.png)
 4.开启`coding-page`服务并绑定自定义域名，如下图：
 ![](/images/2016/03/6.png)
-### 3、修改`_config.yml`文件
+### 修改`_config.yml`文件
 在`Hexo`根目录下找到`_config.yml`文件，进入编辑。找到`deploy`这项，修改为
 ```yml
 # Deployment
@@ -102,7 +102,7 @@ deploy:
   branch: coding-pages
 
 ```
-### 4、发布到Github和Coding服务器上面
+### 发布到Github和Coding服务器上面
 1.新建文章，执行`new`命令，生成指定名称的文章至`hexo\source_posts\postName.md`。
 ```js
 hexo new [layout] "postName" #新建文章
@@ -112,7 +112,7 @@ hexo new [layout] "postName" #新建文章
 ```yml
 ---
 title: 基于Hexo部署个人博客到Github Page和Coding Page并绑定自定义域名
-date: 2016-3-27 20:22:33 
+date: 2016-3-27 20:22:33
 tags:
   - Hexo
   - Github Page
@@ -156,7 +156,7 @@ $ hexo deploy
 >注意：`CNAME`文件是没有后缀的
 
 ## 一点小技巧（不时补充）
-### 1、用Hexo做网站时图片文件的放置
+### 用Hexo做网站时图片文件的放置
 这个问题一开始让我头疼了一会儿，放在七牛吧，既麻烦又不好管理，听说微博图床不错，但我用着总感觉怪怪的。想过用自己的空间搭一个`img.niices.com`，总感觉写个文章引个图片还要传来传去就蛋疼。
 后来看了下Hexo的[官方文档](https://hexo.io/zh-cn/docs/asset-folders.html)。将`_config.myl`文件中的`post_asset_folder`选项设为`true`。然后在`source`文件夹下新建一个`images`文件夹，然后就可以直接用`markdown`语法直接引用图片文件了！
 如图：
@@ -165,5 +165,5 @@ MarkDown使用相对路径引用图片文件的语法：
 ```md
 ![](/images/2016/03/images.png)
 ```
-### 2、推荐一个主题-[NexT](https://github.com/iissnan/hexo-theme-next)
+### 推荐一个主题-[NexT](https://github.com/iissnan/hexo-theme-next)
 [使用文档](http://theme-next.iissnan.com/)
