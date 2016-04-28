@@ -1,5 +1,5 @@
 ---
-title: 基于Hexo部署个人博客到Github Page和Coding Page并绑定自定义域名
+title: Hexo部署个人博客到Github Page和Coding Page并绑定域名
 date: 2016-3-27 20:22:33
 tags:
   - Hexo

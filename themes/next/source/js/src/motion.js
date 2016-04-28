@@ -79,7 +79,6 @@ $(document).ready(function () {
 
   var SIDEBAR_WIDTH = '320px';
   var SIDEBAR_DISPLAY_DURATION = 200;
-  var header = $("#header");
 
   var sidebarToggleMotion = {
     toggleEl: $('.sidebar-toggle'),
@@ -96,11 +95,7 @@ $(document).ready(function () {
             {paddingRight: SIDEBAR_WIDTH},
             SIDEBAR_DISPLAY_DURATION
           );
-          header.addClass("header_right");
         })
-        .on('sidebar.isHiding', function () {
-          header.removeClass("header_right");
-        });
     },
     clickHandler: function () {
       this.isSidebarVisible ? this.hideSidebar() : this.showSidebar();

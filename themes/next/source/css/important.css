@@ -1,6 +1,8 @@
-html{
+html {
     min-width: 320px;
+    overflow-x: hidden;
 }
+
 body {
     background-color: #F8F8F8;
 }
@@ -9,8 +11,10 @@ body {
     background-color: #F8F8F8;
 }
 
+/*导航*/
+
 .header {
-    position: fixed;
+    /*position: fixed;*/
     width: 100%;
     top: 0;
     right: 0;
@@ -28,8 +32,10 @@ body {
     right: 160px;
 }
 
+/*正文内容*/
+
 .main {
-    margin-top: -40px;
+    margin-top: -75px;
     background-color: #f8f8f8;
 }
 
@@ -37,6 +43,8 @@ body {
     position: relative;
     top: 40px;
 }
+
+/*文章*/
 
 .posts-expand .post-type-normal {
     padding: 10px 20px;
@@ -94,6 +102,15 @@ body {
 
 .post-body h3 {
     font-size: 17px;
+    margin-left: -21px;
+}
+.post-body h4 {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.post-body h3 a {
+    margin-left: 5px;
 }
 
 .post-body h3::before {
@@ -103,26 +120,38 @@ body {
     top: -2px;
     margin-right: 5px;
 }
-
+.post-body blockquote ul{
+    padding-left: 15px;
+}
+.post-body ul{
+    padding-left: 17px;
+}
 .post-body a {
     color: #009a61;
 }
-.post-more-link .btn{
+
+.post-more-link .btn {
     color: #009a61;
     border-bottom: 1px solid #999;
     margin-left: 16px;
 }
-.post-more-link .btn:hover{
+
+.post-more-link .btn:hover {
     color: #009a61;
     border-bottom-color: #222;
 }
-.post-more-link a{
+
+.post-more-link a {
     border: none;
 }
-.post-body>p {
-    margin-left: 15px;
-    margin-right: 15px;
+
+/*表格*/
+.post-body table thead tr th{
+    font-weight: normal;
+    border-bottom: 1px solid #ddd;
 }
+
+/*Sidebar Menu*/
 
 .menu .menu-item a:hover {
     background: #fff;
@@ -174,6 +203,8 @@ body {
     margin-left: 0px;
 }
 
+/*侧边栏*/
+
 .sidebar-toggle {
     width: 20px;
     height: 20px;
@@ -191,6 +222,8 @@ body {
 .sidebar-toggle-line-first {
     margin-top: 5px!important;
 }
+
+/*返回顶部*/
 
 .back-to-top {
     width: 40px;
@@ -295,9 +328,17 @@ code {
     font-size: 14px;
 }
 
+/*自适应*/
+
 @media (max-width: 991px) and (min-width: 768px) {
     #header {
         right: 0!important;
+    }
+    .header-inner {
+        width: 95%;
+    }
+    .main-inner {
+        width: 95%;
     }
     .sidebar-toggle {
         display: block;
@@ -328,7 +369,7 @@ code {
     .sidebar {
         display: block!important;
     }
-    .menu .menu-item a{
+    .menu .menu-item a {
         text-align: center;
     }
 }
