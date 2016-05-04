@@ -133,7 +133,7 @@ body {
 .post-more-link .btn {
     color: #009a61;
     border-bottom: 1px solid #999;
-    margin-left: 16px;
+    /*margin-left: 16px;*/
 }
 
 .post-more-link .btn:hover {
