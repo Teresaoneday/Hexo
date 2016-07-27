@@ -271,7 +271,10 @@ $(document).ready(function () {
             drag: true
           };
         postMotionOptions.complete = function () {
-          integrator.next();
+          var display_w = $(window).width();
+          if (display_w >= 1230) {
+            integrator.next();
+          }
         };
 
         $post.velocity('transition.slideDownIn', postMotionOptions);
