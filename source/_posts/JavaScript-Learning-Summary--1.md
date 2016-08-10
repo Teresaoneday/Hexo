@@ -299,7 +299,7 @@ String类型即字符串。可以由双引号（"）或单引号（'）表示，
 
 ###两种复杂数值类型
 
-## 参考文章
+## 参考来源
 [JavaScript学习总结（一）基础部分](https://segmentfault.com/a/1190000000652749)
 [网易前端JavaScript编码规范](http://www.php100.com/html/webkaifa/javascript/2012/0616/10550.html)
 [JS关键字和保留字汇总](http://www.itxueyuan.org/view/6627.html)

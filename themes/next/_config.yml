@@ -6,7 +6,7 @@
 favicon: /favicon.ico
 
 # Set default keywords (Use a comma to separate)
-keywords: "Hexo, NexT"
+keywords: "niices, 蓝色栗子, 前端工程师"
 
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
@@ -172,7 +172,7 @@ duoshuo_shortname: niices
 # duoshuo_hotartical: false
 
 # Disqus
-#disqus_shortname:
+#disqus_shortname: niices
 
 # Baidu Share
 # Available value:
@@ -206,7 +206,7 @@ duoshuo_info:
   ua_enable: true
   admin_enable: true
   user_id: 11709821
-  admin_nickname: ROOT
+  admin_nickname: 博主
 
 
 # Facebook SDK Support.
@@ -262,6 +262,9 @@ sitemap:
 baidusitemap:
     path: baidusitemap.xml
 
+# algolia_search
+algolia_search:
+  enable: true
 
 # title, chinese available
 links_title: Links

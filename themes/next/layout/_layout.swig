@@ -49,7 +49,10 @@
     </footer>
 
     <div class="back-to-top">
-      <i></i>
+      <div class="back-to-top-toggle">
+        <span class="back-toggle-line back-toggle-line-first"></span>
+        <span class="back-toggle-line back-toggle-line-last"></span>
+      </div>
     </div>
   </div>
 

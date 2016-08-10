@@ -116,7 +116,7 @@ server {
 $ nginx -t
 ```
 如果打印出下面结果说明配置文件语法没有问题，具体业务需要自测：
-![](/images/2016/03/01.png)
+![](/images/2016/03/1.png)
 要让配置文件生效需要重新加载`nginx`服务:
 ``` bash
 $ service nginx -s  reload

@@ -12,6 +12,12 @@ categories: Wordpress
 
 <!-- more -->
 
+## 修改前后对比
+修改前：
+![](/images/2016/05/3.png)
+修改后：
+![](/images/2016/05/4.png)
+
 ## 为`TinyMCE`增加额外按钮
 
 将下面代码添加到你的主题`functions.php`模版文件中：

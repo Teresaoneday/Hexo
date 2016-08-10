@@ -11,6 +11,7 @@ body {
     background-color: #F8F8F8;
 }
 
+
 /*导航*/
 
 .header {
@@ -32,6 +33,7 @@ body {
     right: 160px;
 }
 
+
 /*正文内容*/
 
 .main {
@@ -43,6 +45,7 @@ body {
     position: relative;
     top: 40px;
 }
+
 
 /*文章*/
 
@@ -104,6 +107,7 @@ body {
     font-size: 17px;
     margin-left: -21px;
 }
+
 .post-body h4 {
     font-size: 15px;
     font-weight: bold;
@@ -117,15 +121,18 @@ body {
     content: "■";
     position: relative;
     color: #555;
-    top: -2px;
+    top: -0px;
     margin-right: 5px;
 }
-.post-body blockquote ul{
+
+.post-body blockquote ul {
     padding-left: 15px;
 }
-.post-body ul{
+
+.post-body ul {
     padding-left: 17px;
 }
+
 .post-body a {
     color: #009a61;
 }
@@ -145,11 +152,29 @@ body {
     border: none;
 }
 
+
 /*表格*/
-.post-body table thead tr th{
+
+.post-body table thead tr th {
     font-weight: normal;
     border-bottom: 1px solid #ddd;
 }
+
+
+/*fancy-box*/
+
+.fancybox-prev {
+    display: none;
+}
+
+.fancybox-next {
+    display: none;
+}
+
+.fancybox-overlay-fixed {
+    cursor: zoom-out;
+}
+
 
 /*Sidebar Menu*/
 
@@ -203,6 +228,7 @@ body {
     margin-left: 0px;
 }
 
+
 /*侧边栏*/
 
 .sidebar-toggle {
@@ -223,6 +249,7 @@ body {
     margin-top: 5px!important;
 }
 
+
 /*返回顶部*/
 
 .back-to-top {
@@ -234,12 +261,32 @@ body {
     z-index: 1049;
 }
 
-.back-to-top i {
-    float: left;
-    margin: 13px 0 0 2px;
-    width: 24px;
-    height: 11px;
-    background-image: url(../images/up.png);
+.back-to-top-toggle {
+    width: 20px;
+    height: 16px;
+    margin-top: 18px;
+    margin-left: 5px;
+}
+
+.back-toggle-line {
+    display: block;
+    width: 15px;
+    height: 1px;
+    top: 0px;
+    left: 0px;
+    margin-left: 6px;
+    background-color: #fff;
+}
+
+.back-toggle-line-first {
+    transform: rotateZ(-45deg);
+    position: relative;
+    top: 1px;
+    left: -10px;
+}
+
+.back-toggle-line-last {
+    transform: rotateZ(45deg);
 }
 
 .back-to-top.back-to-top-on {
@@ -311,11 +358,15 @@ body {
     top: -1px;
     right: -1px;
     height: 42px;
+    background: #00a3cf;
+    color: #fff;
+    border: none;
 }
 
 .theme-next #ds-thread #ds-reset .ds-post-button:hover {
     background-position: 0 -40px;
-    color: #60676d;
+    color: #FFF;
+    background: #40c8c9;
 }
 
 #ds-thread #ds-reset .ds-account-control ul {
@@ -327,6 +378,68 @@ code {
     background: #f9f2f4;
     font-size: 14px;
 }
+
+
+/*留言板*/
+
+.leave-message {
+    position: relative;
+    top: 20px;
+}
+
+#ghComment {
+    position: relative;
+    top: 20px;
+    min-height: 800px;
+    width: 900px;
+}
+
+.comment {
+    border-bottom: 1px solid #edf1f2;
+    padding-bottom: 15px;
+}
+
+.commentgravatar {
+    width: 40px;
+    height: 40px;
+    margin-top: 15px;
+    border-radius: 20px;
+    overflow: hidden;
+    float: left;
+}
+
+.commentgravatar img {
+    width: 40px;
+    height: 40px;
+}
+
+.commentheader {
+    margin-left: 60px;
+    line-height: 40px;
+}
+
+.commentuser {
+    border: none;
+    color: #555;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.commentdate {
+    border: none;
+    color: #b5b9bc;
+    font-size: 12px;
+    float: right;
+}
+
+.commentdate:hover {
+    color: #b5b9bc;
+}
+
+.commentbody {
+    margin-left: 60px;
+}
+
 
 /*自适应*/
 

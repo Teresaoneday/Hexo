@@ -18,8 +18,11 @@
     NexT.{{ theme.scheme }}
   </a>
 </div>
-<link href="{{ url_for(theme.css) }}/important.css?v={{ theme.version }}" rel="stylesheet" type="text/css" />
+<link href="{{ url_for(theme.css) }}/important.css" rel="stylesheet" type="text/css" />
+<link href="{{ url_for(theme.css) }}/search.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="http://libs.useso.com/js/jquery/2.1.1/jquery.min.js"></script>
-<script type="text/javascript" src="{{ url_for(theme.js) }}/important.js?v={{ theme.version }}"></script>
+<script type="text/javascript" src="{{ url_for(theme.js) }}/important.js"></script>
+<script type="text/javascript" src="{{ url_for(theme.js) }}/comment.js"></script>
+<script type="text/javascript" src="{{ url_for(theme.js) }}/search.js"></script>
 
 {% block footer %}{% endblock %}
