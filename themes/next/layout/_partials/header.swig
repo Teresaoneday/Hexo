@@ -1,3 +1,4 @@
+<script src="//cdn.bootcss.com/jquery/2.2.2/jquery.min.js"></script>
 <div class="site-meta {% if theme.custom_logo.enabled %}custom-logo{% endif %}">
   {% if theme.custom_logo.image and theme.scheme === 'Muse' %}
     <div class="site-meta-headline">

@@ -18,5 +18,4 @@
     </span>
   </div>
 </div>
-<script src="http://cdn.bootcss.com/instantsearch.js/1.5.1/instantsearch.js"></script>
-
+<script src="//cdn.bootcss.com/instantsearch.js/1.7.1/instantsearch.min.js"></script>

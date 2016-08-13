@@ -21,6 +21,7 @@ categories: JavaScript
 
 两个页面只要协议(protocol)，端口(如果指定)，和主机三者中有任何一个不同，就被当作是跨域。 
 下表给出了相对`http://www.niices.com/demo/index.html`同源检测的示例:
+
 | URL                                      |  结果  |  原因   |
 | :--------------------------------------- | :--: | :---: |
 | http://www.niices.com/dir/other.html     |  成功  |       |

@@ -39,6 +39,7 @@
       {{ page.content }}
       <blockquote class="blockquote-center leave-message">给我留言吧！请在 <a href="https://github.com/niices/niices.github.io/issues/1" target="_blank">此Github issue</a> 页面完成操作_(:з」∠)_</blockquote>
       <div id="ghComment"></div>
+      <script type="text/javascript" src="{{ url_for(theme.js) }}/comment.js"></script>
     {% endif %}
   </div>
 
@@ -47,3 +48,5 @@
 {% block sidebar %}
   {{ sidebar_template.render(false) }}
 {% endblock %}
+
+
