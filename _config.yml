@@ -67,11 +67,15 @@ theme: next
 
 # Algolia
 algolia:
-  applicationID: 'Y51ARELFXH'
+  appId: 'Y51ARELFXH'
   apiKey: 'fdb6d9ad464dee8b3d6f061fd97cda0d'
   adminApiKey: '1114cf1a2c82a9d3c2cbd6f5926aab9b'
   indexName: 'niices'
   chunkSize: 5000
+  fields:
+    - title
+    - slug
+    - content:strip
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html

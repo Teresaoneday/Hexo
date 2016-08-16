@@ -50,6 +50,7 @@ a.search-result {
   }
 }
 .popoverlay {
+  display: none;
   position: fixed;
   width: 100%;
   height: 100%;
@@ -199,6 +200,7 @@ a.search-result {
   margin-top: 40px;
   border-top: none;
   padding: 0;
+  text-align: center;
 }
 .algolia-pagination .pagination-item {
   display: inline-block;
@@ -211,4 +213,7 @@ a.search-result {
 }
 .algolia-pagination .disabled-item {
   visibility: hidden;
+}
+.fa-search::before{
+  color: #999999;
 }

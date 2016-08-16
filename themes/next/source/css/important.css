@@ -1,6 +1,7 @@
 html {
     min-width: 320px;
     overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 body {
@@ -9,6 +10,10 @@ body {
 
 .container {
     background-color: #F8F8F8;
+}
+
+.clear {
+    clear: both;
 }
 
 
@@ -37,7 +42,7 @@ body {
 /*正文内容*/
 
 .main {
-    margin-top: -75px;
+    margin-top: -75px!important;
     background-color: #f8f8f8;
 }
 
@@ -150,6 +155,10 @@ body {
 
 .post-more-link a {
     border: none;
+}
+
+.highlight pre {
+    overflow: visible;
 }
 
 
@@ -275,7 +284,7 @@ body {
     top: 0px;
     left: 0px;
     margin-left: 6px;
-    background-color: #fff;
+    background: #f5f5f5;
 }
 
 .back-toggle-line-first {
@@ -371,6 +380,194 @@ body {
 
 #ds-thread #ds-reset .ds-account-control ul {
     border-radius: 0;
+}
+
+#ds-thread #ds-reset .ds-time {
+    position: absolute;
+    display: none;
+    right: 0px;
+    top: 18px;
+}
+
+#ds-thread #ds-reset .ds-replybox {
+    margin-top: 10px;
+}
+
+#ds-thread #ds-reset .ds-comment-body p {
+    margin: 20px 0!important;
+}
+
+#ds-thread #ds-reset .ds-comment-actions a {
+    float: right;
+}
+
+#ds-thread #ds-reset .ds-comment-actions a .ds-icon {
+    display: none;
+}
+
+#ds-thread #ds-reset .ds-comment-footer{
+    height: 21px;
+}
+
+#ds-thread #ds-reset .ds-comment-footer a {
+    margin: 0 0px 0 20px;
+    padding: 0 0px 0 0px;
+}
+
+#ds-thread #ds-reset .ds-post-delete,
+#ds-thread #ds-reset .ds-post-report {
+    display: block;
+}
+
+#ds-reset .ds-service-icon.ds-weibo,
+#ds-reset .ds-service-icon.ds-qqt {
+    width: 10px!important;
+    visibility: hidden;
+}
+
+#ds-reset .ds-dialog-body .ds-actions input {
+    position: relative;
+    top: -1px;
+}
+
+#ds-reset .ds-dialog-body .ds-actions label {
+    margin-right: 5px;
+    margin-left: 12px;
+    margin-top: 10px;
+    position: relative;
+    top: 5px;
+}
+
+#ds-wrapper #ds-reset .ds-actions button {
+    background-image: none;
+    background: #00a3cf;
+    color: #fff;
+    border: none;
+    font-size: 12px;
+    width: 60px;
+    height: 32px;
+    top: -1px;
+    right: -1px;
+}
+
+#ds-wrapper #ds-reset button:hover {
+    color: #FFF;
+    background: #40c8c9;
+}
+
+#ds-wrapper #ds-reset .ds-actions {
+    margin-top: -13px;
+    border: 1px solid #c7d4e1;
+}
+
+#ds-thread #ds-reset .ds-comment-footer a.ds-post-reply:hover{
+    color: #006666;
+}
+
+#ds-thread #ds-reset .ds-comment-footer a.ds-post-likes:hover{
+    color: #28bd98;
+}
+
+#ds-thread #ds-reset .ds-comment-footer a.ds-post-repost:hover{
+    color: #66CCCC;
+}
+
+#ds-thread #ds-reset .ds-comment-footer a.ds-post-report:hover{
+    color: #ff6f6f;
+}
+
+#ds-thread #ds-reset .ds-comment-footer a.ds-post-delete:hover{
+    color: #d22222;
+}
+
+#ds-thread #ds-reset .ds-post-liked a.ds-post-likes{
+    color: #28bd98;
+}
+
+#ds-thread #ds-reset .ds-reply-active .ds-post-reply{
+    color: #006666;
+}
+
+/*游客评论*/
+
+.ds-icons-32 a{
+    background:url(../images/share-icons.png)!important;
+    opacity: 0.7;
+}
+
+.ds-icons-32 a:hover{
+    opacity: 1;
+}
+
+.ds-icons-32 a.ds-weixin{
+    background-position: 0px -160px !important;
+}
+
+.ds-icons-32 a.ds-weibo{
+        background-position: 0px 0 !important;
+}
+
+.ds-icons-32 a.ds-qq{
+    background-position: 0px -128px !important;
+}
+
+.ds-icons-32 a.ds-renren{
+    background-position: 0px -96px !important;
+}
+
+.ds-icons-32 a.ds-kaixin{
+    display: none;
+}
+
+.ds-icons-32 a.ds-douban{
+    display: none;
+}
+
+#ds-wrapper #ds-reset .ds-control-group input{
+    box-shadow: none;
+}
+
+#ds-wrapper #ds-reset button{
+    background-image: none;
+    border:none;
+    background: #00a3cf;
+    color: #fff;
+    width: 254px;
+}
+
+#ds-thread #ds-reset .ds-login-buttons .ds-social-links{
+    width: 306px;
+}
+
+#ds-thread #ds-reset .ds-login-buttons .ds-social-links ul{
+    float: left;
+}
+
+#ds-thread #ds-reset .ds-login-buttons .ds-social-links .ds-service-list li:nth-child(4),
+#ds-thread #ds-reset .ds-login-buttons .ds-social-links .ds-service-list li:nth-child(5){
+    display: none;
+}
+
+#ds-thread #ds-reset .ds-login-buttons .ds-social-links .ds-additional-services li:nth-child(2),
+#ds-thread #ds-reset .ds-login-buttons .ds-social-links .ds-additional-services li:nth-child(3){
+    display: none;
+}
+
+#ds-thread #ds-reset .ds-login-buttons .ds-social-links .ds-service-list.ds-additional-services li:nth-child(4){
+    display: block;
+}
+
+#ds-thread #ds-reset .ds-login-buttons .ds-social-links .ds-service-list.ds-additional-services{
+    display: block;
+}
+
+#ds-reset .ds-service-link{
+    background: none;
+    padding-left: 0;
+}
+
+#ds-wrapper #ds-reset .ds-service-list{
+    width: 50%;
 }
 
 code {
@@ -484,5 +681,14 @@ code {
     }
     .menu .menu-item a {
         text-align: center;
+    }
+}
+
+@media (max-width: 500px) {
+    .duoshuo-ua-platform{
+        display: none!important;
+    }
+    .duoshuo-ua-browser{
+        display: none!important;
     }
 }

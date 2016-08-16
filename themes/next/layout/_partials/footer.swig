@@ -9,18 +9,18 @@
 </div>
 
 <div class="powered-by">
-  {{ __('footer.powered', '<a class="theme-link" href="http://hexo.io">Hexo</a>') }}
+  {{ __('footer.powered', '<a class="theme-link" href="http://hexo.io"  target="_blank">Hexo</a>') }}
 </div>
 
 <div class="theme-info">
   {{ __('footer.theme') }} -
-  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next" target="_blank">
     NexT.{{ theme.scheme }}
   </a>
 </div>
 <link href="{{ url_for(theme.css) }}/important.css" rel="stylesheet" type="text/css" />
 <link href="{{ url_for(theme.css) }}/search.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="{{ url_for(theme.js) }}/important.js"></script>
 <script type="text/javascript" src="{{ url_for(theme.js) }}/search.js"></script>
+<script type="text/javascript" src="{{ url_for(theme.js) }}/important.js"></script>
 
 {% block footer %}{% endblock %}

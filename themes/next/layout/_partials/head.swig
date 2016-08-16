@@ -23,7 +23,7 @@
 
 
 {% if theme.fancybox %}
-  <link href="{{ url_for(theme.vendors) }}/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
+  <link href="{{ url_for(theme.vendors) }}/fancybox/source/jquery.fancybox.css" rel="stylesheet" type="text/css"/>
 {% endif %}
 
 
@@ -32,11 +32,11 @@
 {% endif %}
 
 
-<link href="{{ url_for(theme.vendors) }}/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+<link href="{{ url_for(theme.vendors) }}/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
 
-<link href="{{ url_for(theme.css) }}/main.css?v={{ theme.version }}" rel="stylesheet" type="text/css" />
+<link href="{{ url_for(theme.css) }}/main.css" rel="stylesheet" type="text/css" />
 
-<link href="{{ url_for(theme.css) }}/important.css?v={{ theme.version }}" rel="stylesheet" type="text/css" />
+<link href="{{ url_for(theme.css) }}/important.css" rel="stylesheet" type="text/css" />
 
 {% if page.keywords %}
   <meta name="keywords" content="{{ page.keywords }}" />
