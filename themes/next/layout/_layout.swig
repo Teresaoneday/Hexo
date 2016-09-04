@@ -41,6 +41,13 @@
         {% endif %}
       </div>
     </main>
+    {% if hasSearch %}
+      <div class="site-search">
+        {% include '_partials/search.swig' %}
+      </div>
+    {% endif %}
+
+    <div id="music_hub_content"></div>
 
     <footer id="footer" class="footer">
       <div class="footer-inner">

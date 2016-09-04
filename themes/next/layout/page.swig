@@ -1,6 +1,5 @@
 {% extends '_layout.swig' %}
 {% import '_macro/sidebar.swig' as sidebar_template %}
-
 {% block title %}
   {% set page_title_suffix = ' | ' + config.title %}
 
@@ -39,6 +38,10 @@
       {{ page.content }}
       <blockquote class="blockquote-center leave-message">给我留言吧！请在 <a href="https://github.com/niices/niices.github.io/issues/1" target="_blank">此Github issue</a> 页面完成操作_(:з」∠)_</blockquote>
       <div id="ghComment"></div>
+      <link href="{{ url_for(theme.css) }}/music-hub.css" rel="stylesheet" type="text/css" />
+      <div id="music_hub_content"></div>
+      <script type="text/javascript" src="{{ url_for(theme.js) }}/music-hub.js"></script>
+      <script type="text/javascript" src="{{ url_for(theme.js) }}/music-hub-config.js"></script>
       <script type="text/javascript" src="{{ url_for(theme.js) }}/comment.js"></script>
     {% endif %}
   </div>

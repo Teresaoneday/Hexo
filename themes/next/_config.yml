@@ -246,6 +246,7 @@ vendors: vendors
 css: css
 js: js
 images: images
+music: music
 
 # Theme version
 version: 0.5.0

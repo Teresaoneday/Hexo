@@ -19,7 +19,17 @@ $(document).ready(function () {
 
     $siteNav.stop()[animateAction]('fast', function () {
       $siteNav[animateCallback](ON_CLASS_NAME);
+      $("body")[animateCallback]("body-site-nav");
     });
+    if (!isSiteNavOn) {
+      $(".site-nav-toggle .btn-bar").eq(0).addClass("btn-bar-first");
+      $(".site-nav-toggle .btn-bar").eq(1).addClass("btn-bar-middle");
+      $(".site-nav-toggle .btn-bar").eq(2).addClass("btn-bar-last");
+    } else {
+      $(".site-nav-toggle .btn-bar").eq(0).removeClass("btn-bar-first");
+      $(".site-nav-toggle .btn-bar").eq(1).removeClass("btn-bar-middle");
+      $(".site-nav-toggle .btn-bar").eq(2).removeClass("btn-bar-last");
+    }
   });
 
 
