@@ -24,6 +24,5 @@
 <script type="text/javascript" src="{{ url_for(theme.js) }}/search.js"></script>
 <script type="text/javascript" src="{{ url_for(theme.js) }}/important.js"></script>
 <script src="{{ url_for(theme.music) }}/js/music-hub.js"></script>
-<script src="{{ url_for(theme.music) }}/js/music-hub-config.js"></script>
 
 {% block footer %}{% endblock %}

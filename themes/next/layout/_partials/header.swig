@@ -10,7 +10,7 @@
   {% endif %}
 
   <div class="custom-logo-site-title">
-    <a href="{{ config.root }}"  class="brand" rel="start">
+    <a href="http://www.niices.com"  class="brand" rel="start" target="_blank">
       <span class="logo-line-before"><i></i></span>
       <span class="site-title">{{ config.title }}</span>
       <span class="logo-line-after"><i></i></span>
